@@ -1,0 +1,6 @@
+node_modules
+yarn.lock
+.gitignore
+dist
+.env.local
+.env.production
