@@ -3,4 +3,5 @@ yarn.lock
 .gitignore
 dist
 .env.local
+.env
 .env.production
