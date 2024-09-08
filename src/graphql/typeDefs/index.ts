@@ -1,4 +1,4 @@
-const DEFAULT_LANG = "en";
+const DEFAULT_LANG = 'en';
 
 export const typeDefs = `#graphql
     type Country {
@@ -7,7 +7,21 @@ export const typeDefs = `#graphql
         currency: String
     }
 
+    type Rooms {
+        id: ID!
+        roomsAvailable: Int
+        benefits: [String!]
+        imageSrcId: Int
+        type: String
+    }
+
+    input RoomsFilters {
+        type: String,
+        amount: Int
+    }
+
     type Query {
         countries(lang: String = ${DEFAULT_LANG}): [Country!]
+        rooms(filter: RoomsFilters): [Rooms!]
     }
 `;
