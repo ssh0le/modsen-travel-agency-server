@@ -28,10 +28,20 @@ interface RoomsFilter {
 	};
 }
 
+export interface Testimony {
+	id: number;
+	author: string;
+	authorImageId: number;
+	testimony: string;
+	date: string;
+	rating: number;
+}
+
 export interface QueryResolvers {
 	[index: string]: any;
 	Query: {
 		countries: (parent, args: { lang: string }) => Promise<Country[]>;
 		rooms: (parent, args: RoomsFilter) => Room[];
+		testimonies: () => Testimony[];
 	};
 }

@@ -7,7 +7,7 @@ export const typeDefs = `#graphql
         currency: String
     }
 
-    type Rooms {
+    type Room {
         id: ID!
         roomsAvailable: Int
         benefits: [String!]
@@ -20,8 +20,18 @@ export const typeDefs = `#graphql
         amount: Int
     }
 
+    type Testimony {
+        id: ID!
+        author: String
+        authorImageId: Int
+        testimony: String
+        date: String
+        rating: Float
+    }
+
     type Query {
         countries(lang: String = ${DEFAULT_LANG}): [Country!]
-        rooms(filter: RoomsFilters): [Rooms!]
+        rooms(filter: RoomsFilters): [Room!]
+        testimonies: [Testimony!]
     }
 `;
