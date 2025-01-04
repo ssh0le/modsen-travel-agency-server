@@ -7,6 +7,7 @@ export const allTestimonies = [
 			'This product has completely transformed my workflow. Highly recommended!',
 		date: '2023-05-15',
 		rating: 3.5,
+		roomId: 1,
 	},
 	{
 		id: 2,
@@ -15,6 +16,7 @@ export const allTestimonies = [
 		testimony: "I'm impressed with the quality and ease of use. Great job!",
 		date: '2023-05-10',
 		rating: 4,
+		roomId: 1,
 	},
 	{
 		id: 3,
@@ -24,6 +26,7 @@ export const allTestimonies = [
 			'The customer support is outstanding. They went above and beyond to help me.',
 		date: '2023-05-05',
 		rating: 5,
+		roomId: 1,
 	},
 	{
 		id: 4,
@@ -33,5 +36,6 @@ export const allTestimonies = [
 			"Good product overall, but there's room for improvement in some areas. Good product overall, but there's room for improvement in some areas. Good product overall, but there's room for improvement in some areas. Good product overall, but there's room for improvement in some areas. Good product overall, but there's room for improvement in some areas.",
 		date: '2023-04-30',
 		rating: 3,
+		roomId: 2,
 	},
 ];
