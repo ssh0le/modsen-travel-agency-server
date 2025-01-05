@@ -6,7 +6,7 @@ export const allTestimonies = [
 		testimony:
 			'This product has completely transformed my workflow. Highly recommended!',
 		date: '2023-05-15',
-		rating: 3.5,
+		rating: 4.5,
 		roomId: 1,
 	},
 	{
